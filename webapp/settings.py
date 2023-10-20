@@ -29,6 +29,11 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+# for deployment issue with csrf only
+# CSRF_TRUSTED_ORIGINS = [
+#     'https://your-base-domain'
+# ]
+
 # Application definition
 
 INSTALLED_APPS = [
