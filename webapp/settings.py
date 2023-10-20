@@ -26,8 +26,8 @@ SECRET_KEY = 'django-insecure-0y6wao1=!o+2_z_keh3v+pzy286o4y#imqj)trs!svsc^#lz@+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-#ALLOWED_HOSTS = ['web-production-2e058.up.railway.app']
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['web-production-2e058.up.railway.app']
+#ALLOWED_HOSTS = ['*']
 
 # for deployment issue with csrf only
 # CSRF_TRUSTED_ORIGINS = [
@@ -37,13 +37,13 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'whitenoise.runserver_nostatic',  # for serving staticfiles on deployment.
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'whitenoise.runserver_nostatic',  # for serving staticfiles on deployment.
     'index',
 ]
 
@@ -153,7 +153,13 @@ STATICFILES_DIRS = [
 ]
 
 # For serving staticfiles on Deployment.
-STATICFILES_STORAGE="whitenoise.storage.CompressedManifestStaticFilesStorage"
+# STATICFILES_STORAGE="whitenoise.storage.CompressedManifestStaticFilesStorage" for older django 
+# for Django 4.2 and +
+STORAGES = {
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
