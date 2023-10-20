@@ -1,0 +1,59 @@
+{% extends 'home.html' %} 
+{% load static %}
+{% block 'title' %}<title>java</title>{% endblock %}
+
+{% block 'Main_Content' %}
+<section>
+    <div class="fl-top">
+        <div class="head">
+            <h2>Master course in Java : Java 11, Databases.</h2>
+            <p>Learn Java In This Course And Become a Computer Programmer. Obtain valuable Core Java Skills And Java Certification</p>
+        </div>
+        <img class="shadow" src="{% static 'images/java.jpg' %}">
+    </div>
+    <div class="container-fluid">
+        <div class="container-ls shadow">
+            <h3 class="">What you'll learn</h3>
+            <ul>
+                <li>HANDS-ON with EXERCISES and PUZZLES: Learn Object Oriented Programming with Java</li>
+                <li>CLEAR YOUR JAVA INTERVIEWS: GET ALL the SKILLS to demonstrate an EXPERTISE with Java Programming</li>
+            </ul>
+        </div>
+        <div class="container-ls shadow ">
+            <h3>Content : </h3>
+            <ol>
+                <li>Core Introduction</li>
+                <ul>
+                    <li> introduction</li>
+                    <li> installing java</li>
+                    <li> Jshell</li>
+                    <li> java Platform</li>
+                    <li> installing Eclipse</li>
+                    <li> datatypes and alternative</li>
+                    <li> loops</li>
+                    <li> collections </li>
+                </ul>
+                <li> Advanced</li>
+                <ul>
+                    <li> Files and Directories</li>
+                    <li> exception handling </li>
+                    <li> Threads and Concurrency</li>
+                    <li> MySQL</li>
+                    <li> introduction to spring</li>
+                    <li> project using spring</li>
+                </ul>
+            </ol>
+        </div>
+        <div class="container-desc shadow">
+            <h3>Description</h3>
+            <p>LEARN JAVA PROGRAMMING WRITING 200+ JAVA PROGRAMS, PUZZLES & EXERCISES.
+
+                RECOMMENDED for absolute beginners to Java and Programming!
+                
+                BONUS - Learn to Build REST API with Spring, Spring Boot, and JPA</p>
+            <p>We take a hands-on approach using a combination of JShell and Eclipse as an IDE to illustrate more than 200 Java Coding Exercises, Puzzles, and Code Examples. This course assumes no previous ( beginner ) programming or Java experience. If you’ve never programmed a computer before, or if you already have experience with another programming language and want to quickly learn Java, this is a perfect course for you. </p>
+            <div class=""><a href="{% url 'signup' %}" class="btn btn-warning">Enroll Now &nbsp;&nbsp; <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        </div>
+    </div>
+</section>
+{% endblock %}

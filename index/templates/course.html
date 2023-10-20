@@ -1,0 +1,199 @@
+{% extends 'home.html' %} 
+{% load static %}
+{% block 'title' %}<title>Course</title>{% endblock %}
+
+{% block 'Main_Content' %}
+<section class="">
+    <div id="course-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+          <button type="button" data-bs-target="#course-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="co-slide1"></button>
+          <button type="button" data-bs-target="#course-carousel" data-bs-slide-to="1" aria-label="co-slide2"></button>
+          <button type="button" data-bs-target="#course-carousel" data-bs-slide-to="2" aria-label="co-slide3"></button>
+          <button type="button" data-bs-target="#course-carousel" data-bs-slide-to="3" aria-label="co-slide4"></button>
+          <button type="button" data-bs-target="#course-carousel" data-bs-slide-to="4" aria-label="co-slide5"></button>
+          <button type="button" data-bs-target="#course-carousel" data-bs-slide-to="5" aria-label="co-slide6"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img src="{% static 'images/co-slide1.jpg' %}" class="d-block w-100 co-img" alt="co-slide1">
+          </div>
+          <div class="carousel-item c-item">
+            <img src="{% static 'images/co-slide2.jpg' %}" class="d-block w-100 co-img" alt="co-slide2">
+          </div>
+          <div class="carousel-item c-item">
+            <img src="{% static 'images/co-slide3.jpg' %}" class="d-block w-100 co-img" alt="co-slide3">
+          </div>
+          <div class="carousel-item c-item">
+            <img src="{% static 'images/co-slide4.jpg' %}" class="d-block w-100 co-img" alt="co-slide4">
+          </div>
+          <div class="carousel-item c-item">
+            <img src="{% static 'images/co-slide5.jpg' %}" class="d-block w-100 co-img" alt="co-slide5">
+          </div>
+          <div class="carousel-item c-item">
+            <img src="{% static 'images/co-slide6.jpg' %}" class="d-block w-100 co-img" alt="co-slide6">
+          </div>
+        </div>
+    </div>
+    <br>
+    <h2 class="cen-h2">Courses We Offer</h2>
+<!-- cards -->
+
+  <div class="cards-style">
+    
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      
+      <div class="col m-0 p-5">
+        <div class="card h-100 shadow-lg mb-5 bg-body-tertiary rounded">
+          <img src="{% static 'images/c-cpp.jpg' %}" class="card-img-top" alt="c/c++">
+          <div class="card-body">
+            <h5 class="card-title">C/C++ (Foundations)</h5>
+            <p class="card-text">This is a fast-paced introductory course to the C++ programming language. It is intended for those with little programming background, though prior programming experience will make it easier, and those with previous experience will still learn C++-specific constructs and concepts.</p>
+          </div>
+          <div class="card-footer">
+            <a href="{% url 'course_details' 'c-cpp' %}" class="btn btn-dark">Click to Know More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col m-0 p-5">
+        <div class="card h-100 shadow-lg bg-white rounded">
+          <img src="{% static 'images/python.jpg' %}" class="card-img-top" alt="python">
+          <div class="card-body">
+            <h5 class="card-title">Python (Core + Advanced)</h5>
+            <p class="card-text">This course provides an introduction to programming and the Python language.This course includes an overview of the various tools available for writing and running Python, and gets students coding quickly.</p>
+          </div>
+          <div class="card-footer">
+            <a href="{% url 'course_details' 'python' %}" class="btn btn-dark">Click to Know More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col m-0 p-5">
+        <div class="card h-100 shadow-lg bg-white rounded">
+          <img src="{% static 'images/java.jpg' %}" class="card-img-top img-fix" alt="java">
+          <div class="card-body">
+            <h5 class="card-title">Java (Core + Advanced)</h5>
+            <p class="card-text">This course of study builds on the skills gained by students in Java Fundamentals or Java Foundations to help advance Java
+              programming skills.  </p>
+          </div>
+          <div class="card-footer">
+            <a href="{% url 'course_details' 'java' %}" class="btn btn-dark">Click to Know More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      
+      <div class="col m-0 p-5">
+        <div class="card h-100 shadow-lg bg-white rounded">
+          <img src="{% static 'images/mern.png' %}" class="card-img-top" alt="mern">
+          <div class="card-body">
+            <h5 class="card-title">MERN Stack</h5>
+            <p class="card-text">MERN Stack is an open-source JavaScript stack used for ease in the development and deployment of applications. 'MERN' stands for the four technologies that make up the stack: MongoDB, Express.js, React, and Node.js. </p>
+          </div>
+          <div class="card-footer">
+            <a href="{% url 'course_details' 'MERN' %}" class="btn btn-dark">Click to Know More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col m-0 p-5">
+        <div class="card h-100 shadow-lg bg-white rounded">
+          <img src="{% static 'images/fs-python.jpg' %}" class="card-img-top" alt="fs-python">
+          <div class="card-body">
+            <h5 class="card-title">Full Stack Python Web Development</h5>
+            <p class="card-text">Welcome to the Python and Django Full Stack Web Developer Bootcamp! In this course we cover everything you need to know to build a website using Python, Django, and many more web technologies!</p></p>
+          </div>
+          <div class="card-footer">
+            <a href="{% url 'course_details' 'full_stack_python' %}" class="btn btn-dark">Click to Know More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col m-0 p-5">
+        <div class="card h-100 shadow-lg bg-white rounded">
+          <img src="{% static 'images/fs-java.jpg' %}" class="card-img-top" alt="fs-java">
+          <div class="card-body">
+            <h5 class="card-title">Full Stack Java Web Development</h5>
+            <p class="card-text">Welcome to our Full Stack Java Developer course designed for learning enthusiasts who want to create a quick and efficient web application.If you have some Java knowledge and little or no knowledge about Java programming, this course is perfect for you. </p>
+          </div>
+          <div class="card-footer">
+            <a href="{% url 'course_details' 'full_stack_java' %}" class="btn btn-dark">Click to Know More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      
+      <div class="col m-0 p-5">
+        <div class="card h-100 shadow-lg bg-white rounded">
+          <img src="{% static 'images/DA.png' %}" class="card-img-top" alt="DA">
+          <div class="card-body">
+            <h5 class="card-title">Data Analyst</h5>
+            <p class="card-text">Ready to start a career in Data Analysis but do not know where to begin? This course presents you with a gentle introduction to Data Analysis, the role of a Data Analyst, and the tools used in this job. You will learn about the skills and responsibilities of a data analyst </p>
+          </div>
+          <div class="card-footer">
+            <a href="{% url 'course_details' 'DA' %}" class="btn btn-dark">Click to Know More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col m-0 p-5">
+        <div class="card h-100 shadow-lg bg-white rounded">
+          <img src="{% static 'images/devops.png' %}" class="card-img-top" alt="devops">
+          <div class="card-body">
+            <h5 class="card-title">DevOps with AWS</h5>
+            <p class="card-text">DevOps training is a comprehensive course that provides in-depth knowledge of various DevOps tools, including Git, Jenkins, Docker, Ansible, Terraform, Kubernetes, Prometheus, and Grafana. The course is designed to be entirely hands-on, allowing you to become a certified practitioner </p>
+          </div>
+          <div class="card-footer">
+            <a href="{% url 'course_details' 'devOps' %}" class="btn btn-dark">Click to Know More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col m-0 p-5">
+        <div class="card h-100 shadow-lg bg-white rounded">
+          <img src="{% static 'images/DS.png' %}" class="card-img-top" alt="DS">
+          <div class="card-body">
+            <h5 class="card-title">Data Scientist</h5>
+            <p class="card-text">Working as a data scientist can be intellectually challenging, analytically satisfying, and put you at the forefront of new advances in technology. Data scientists have become more common and in demand, as big data continues to be increasingly important to the way organizations make decisions.</p>
+          </div>
+          <div class="card-footer">
+            <a href="{% url 'course_details' 'DS' %}" class="btn btn-dark">Click to Know More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      
+      <div class="col m-0 p-5">
+        <div class="card h-100 shadow-lg bg-white rounded">
+          <img src="{% static 'images/database.jpg' %}" class="card-img-top" alt="DBMS">
+          <div class="card-body">
+            <h5 class="card-title">DBMS Course (Mongo + MySQL)</h5>
+            <p class="card-text">Database Management Essentials provides the foundation you need for a career in database development, data warehousing, or business intelligence In this course, you will create relational databases, write SQL and No SQL statements</p>
+          </div>
+          <div class="card-footer">
+            <a href="{% url 'course_details' 'dbms' %}" class="btn btn-dark">Click to Know More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col m-0 p-5">
+        <div class="card h-100 shadow-lg bg-white rounded">
+          <img src="{% static 'images/tester.png' %}" class="card-img-top" alt="ST">
+          <div class="card-body">
+            <h5 class="card-title">Software Tester</h5>
+            <p class="card-text">The Software Testing course is a program that begins by giving you insights into the different phases of the software development life cycle (SDLC) and different models in SDLC. you will understand the strategic approach to testing, its different levels, and how to document the development process.</p>
+          </div>
+          <div class="card-footer">
+            <a href="{% url 'course_details' 'software_tester' %}" class="btn btn-dark">Click to Know More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+    <br>
+
+</section>
+{% endblock %}

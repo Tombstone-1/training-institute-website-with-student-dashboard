@@ -1,0 +1,79 @@
+{% extends 'home.html' %} 
+{% load static %}
+{% block 'title' %}<title>DevOps</title>{% endblock %}
+
+{% block 'Main_Content' %}
+<section>
+    <div class="fl-top">
+        <div class="head">
+            <h2>DevOps with AWS : Complete DevOps Guide</h2>
+            <p>Begin DevOps Career As an Absolute Beginner | Linux, AWS, Scripting, Jenkins, Ansible, Docker</p>
+        </div>
+        <img class="shadow" src="{% static 'images/devops.png' %}">
+    </div>
+    <div class="container-fluid">
+        <div class="container-ls shadow">
+            <h3 class="">What you'll learn</h3>
+            <ul>
+                <li>Learn DevOps from total scratch</li>
+                <li>Understand how various technologies work together in DevOps</li>
+                <li>Linux, AWS, Bash & Python Scripting, Jenkins, Ansible, Docker, Kubernetes, Cloudformation, Terraform & More</li>
+                <li>Get a firm understanding in DevOps Processes, Tools & Technologies</li>
+            </ul>
+        </div>
+        <div class="container-ls shadow ">
+            <h3>Content : </h3>
+            <ol>
+                <li>Introduction</li>
+                <ul>
+                    <li> Prerequisites info & setup</li>
+                    <li> VM setup</li>
+                    <li> Linux</li>
+                    <li> Vagrant & linux Servers</li>
+                    <li> Variables, JSON & YAML</li>
+                    <li> Networking</li>
+                </ul>
+                <li> Containers Introduction</li>
+                <ul>
+                    <li> Dockers </li>
+                    <li> Hands on Docker Containers</li>
+                    <li> Vprofile Project on Containers</li>
+                    <li> Microservices</li>
+                    <li> Mircoservice Project</li>
+                </ul>
+                <li> Bash Scripting</li>
+                <ul>
+                    <li> variables</li>
+                    <li> system variable </li>
+                    <li> command substitution</li>
+                    <li> Exporting variables</li>
+                    <li> SSH key Exchange</li>
+                </ul>
+                <li> AWS</li>
+                <ul>
+                    <li> VPC introduction</li>
+                    <li> VPC setup</li>
+                    <li> Ec2 Logs</li>
+                    <li> S3 Policy</li>
+                </ul>
+                <li> Deployment on Kubernetes Cluster</li>
+                <ul>
+                    <li> DB deployment Definition </li>
+                    <li> Memcached Deployment & service</li>
+                    <li> RabbitMQ</li>
+                </ul>
+            </ol>
+        </div>
+        <div class="container-desc shadow">
+            <h3>Description</h3>
+            <p>Decoding DevOps course is for anybody who wants to get started with DevOps.
+
+                As there are many tools & technologies in DevOps, it has become difficult for people to choose the right technologies.</p>
+            <p>This course starts from very basics of command line, hands on demonstrations of many tools & technologies.
+
+                Also most importantly it will show you how various technologies in DevOps work together by setting up your own projects.</p>
+            <div class=""><a href="{% url 'signup' %}" class="btn btn-warning">Enroll Now &nbsp;&nbsp; <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        </div>
+    </div>
+</section>
+{% endblock %}

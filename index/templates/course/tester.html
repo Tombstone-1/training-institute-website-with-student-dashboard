@@ -1,0 +1,58 @@
+{% extends 'home.html' %} 
+{% load static %}
+{% block 'title' %}<title>Software tester</title>{% endblock %}
+
+{% block 'Main_Content' %}
+<section>
+    <div class="fl-top">
+        <div class="head">
+            <h2>Software Tester Course - Become an Effective Tester</h2>
+            <p>Learn to become QA Engineer</p>
+        </div>
+        <img class="shadow" src="{% static 'images/tester.png' %}">
+    </div>
+    <div class="container-fluid">
+        <div class="container-ls shadow">
+            <h3 class="">What you'll learn</h3>
+            <ul>
+                <li>You will gain an understanding of the theory of testing.</li>
+                <li>You will develop test plans to guide the testing stage of the software development lifecycle.</li>
+                <li>You will practice writing tests for a variety of quality intent, including code coverage, defect finding, and statistical testing.</li>
+                <li>You will create defect reports to provide transparency and understanding to supervisors, colleagues, and users.</li>
+            </ul>
+        </div>
+        <div class="container-ls shadow ">
+            <h3>Content : </h3>
+            <ol>
+                <li>Introduction</li>
+                <ul>
+                    <li> Automation using test framework</li>
+                    <li>writing JUnit Test</li>
+                </ul>
+                <li>Testing Foundations</li>
+                <ul>
+                    <li>testing principal</li>
+                    <li>'V Model ' of software development</li>
+                    <li>Structural Testing</li>
+                    <li>Mutation testing</li>
+                </ul>
+                <li>Testing The software Development Lifecycle</li>
+                <ul>
+                    <li>Software defect reports analysis</li>
+                    <li>reporting</li>
+                    <li>report content</li>
+                    <li>track, Retest and close</li>
+                </ul>
+                <li> Writing Good Unit Tests</li>
+            </ol>
+        </div>
+        <div class="container-desc shadow">
+            <h3>Description</h3>
+            <p>Everything you need to learn Software Testing, all combined in one resource.
+
+                Course objective is to provide you with all required knowledge that you need in order to land your first software testing job whether it is a full-time or a freelancing job.</p>
+            <div class=""><a href="{% url 'signup' %}" class="btn btn-warning">Enroll Now &nbsp;&nbsp; <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        </div>
+    </div>
+</section>
+{% endblock %}

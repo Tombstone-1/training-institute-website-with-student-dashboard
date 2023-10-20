@@ -1,0 +1,62 @@
+{% extends 'home.html' %} 
+{% load static %}
+{% block 'title' %}<title>MERN stack</title>{% endblock %}
+
+{% block 'Main_Content' %}
+<section>
+    <div class="fl-top">
+        <div class="head">
+            <h2>MERN Stack Program : MongoDB, ExpressJS, ReactJS, nodeJS </h2>
+            <p>learn MERN Stack with express js, node js, MongoDB, ReactJS</p>
+        </div>
+        <img class="shadow" src="{% static 'images/mern.png' %}">
+    </div>
+    <div class="container-fluid">
+        <div class="container-ls shadow">
+            <h3 class="">What you'll learn</h3>
+            <ul>
+                <li>Learn how to build big full stack app from scratch</li>
+                <li>Learn how to implement JWT for authentication and authorization</li>
+                <li>Learn how to implement ES6 in Node</li>
+                <li>Learn best practices of Front-End and Server applications</li>
+                <li>Learn how to connect Front-End application (React) with Backend application (Express, MongoDB, NodeJS)</li>
+            </ul>
+        </div>
+        <div class="container-ls shadow ">
+            <h3>Content : </h3>
+            <ol>
+                <li> React Introduction</li>
+                <ul>
+                    <li> general setup</li>
+                    <li> React Router</li>
+                    <li> landing page</li>
+                    <li> Error Page</li>
+                    <li> register page</li>
+                    <li> login page</li>
+                    <li> dashboard</li>
+                </ul>
+                <li> nodejs and expressjs</li>
+                <ul>
+                    <li> server in NodeJS </li>
+                    <li>Streams and Buffers in NodeJS</li>
+                    <li>Express</li>
+                    <li> Connectivity</li>
+                </ul>
+                <li> MongoDB</li>
+                <ul>
+                    <li> setting up MongoDB</li>
+                    <li> Documents </li>
+                    <li> records</li>
+                    <li> commands -CRUD</li>
+                </ul>
+            </ol>
+        </div>
+        <div class="container-desc shadow">
+            <h3>Description</h3>
+            <p>What's up everybody, this is John from Coding Addict and welcome to my MERN Stack course . During the course we will build full stack application (Jobify) from scratch, using MongoDB, Express, React and Node.js</p>
+            <p>Developers who are familiar with React and Express Fundamentals and now want to learn how to build and deploy MERN application from scratch</p>
+            <div class=""><a href="{% url 'signup' %}" class="btn btn-warning">Enroll Now &nbsp;&nbsp; <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        </div>
+    </div>
+</section>
+{% endblock %}

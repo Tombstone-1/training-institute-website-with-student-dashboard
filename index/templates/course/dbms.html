@@ -1,0 +1,59 @@
+{% extends 'home.html' %} 
+{% load static %}
+{% block 'title' %}<title>DBMS</title>{% endblock %}
+
+{% block 'Main_Content' %}
+<section>
+    <div class="fl-top">
+        <div class="head">
+            <h2>Database Course with MySQL and Mongo</h2>
+            <p>support course package</p>
+        </div>
+        <img class="shadow" src="{% static 'images/database.jpg' %}">
+    </div>
+    <div class="container-fluid">
+        <div class="container-ls shadow">
+            <h3 class="">What you'll learn</h3>
+            <ul>
+                <li>Create a fully functional web site using the full stack django</li>
+                <li>use css to create beautifully styled sites</li>
+                <li>learn how to use html to create website content</li>
+                <li>learn how to take advantage of Bootstrap to work with DOM</li>
+                <li>create fantastic landing pages</li>
+                <li> use django as a back end for the websites</li>
+                <li>implement a full Model-View-Templates structure for your site.</li>
+            </ul>
+        </div>
+        <div class="container-ls shadow ">
+            <h3>Content : </h3>
+            <ol>
+                <li> MongoDB</li>
+                <ul>
+                    <li> setting up MongoDB</li>
+                    <li> Documents </li>
+                    <li> records</li>
+                    <li> commands -CRUD</li>
+                    <li> limiting records</li>
+                    <li>Aggregation</li>
+                </ul>
+                <br>
+                <li>MySQL</li>
+                <ul>
+                    <li> DB - MySQL</li>
+                    <li> MySQL - DDL </li>
+                    <li> MySQL - DQL/DML</li>
+                    <li> MySQL - DCL/TCL</li>
+                    <li> Connecting With Django</li>
+                    <li> framework assign with MySQL</li>
+                </ul>
+            </ol>
+        </div>
+        <div class="container-desc shadow">
+            <h3>Description</h3>
+            <p>MySQL is the most popular open-source database management system. This MySQL tutorial for beginners covers all concepts like MySQL basics, normalization, and MySQL Workbench installation. Later in this MySQL tutorial, Commands like Select, Insert, Group By and advance topics like Wildcards & Functions are covered.</p>
+            <p>MongoDB is an open-source document database and leading NoSQL database. MongoDB is written in C++. This tutorial will give you great understanding on MongoDB concepts needed to create and deploy a highly scalable and performance-oriented database.</p>
+            <div class=""><a href="{% url 'signup' %}" class="btn btn-warning">Enroll Now &nbsp;&nbsp; <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends 'home.html' %} 
+{% load static %}
+{% block 'title' %}<title>foundations</title>{% endblock %}
+
+{% block 'Main_Content' %}
+<section>
+    <div class="fl-top">
+        <div class="head">
+            <h2>Foundation Course C-Cpp</h2>
+            <p>Master C/C++ course from Beginner level course for Students.</p>
+        </div>
+        <img class="shadow" src="{% static 'images/c-cpp.jpg' %}">
+    </div>
+    <div class="container-fluid">
+        <div class="container-ls shadow">
+            <h3 class="">What you'll learn</h3>
+            <ul>
+                <li>Understand the fundamentals of the C Programming Language</li>
+                <li>Create your first C Application</li>
+                <li>Understand variables and the different data types</li>
+                <li>Understand the core language that most modern languages are based on</li>
+                <li>Make yourself more marketable for entry level programming positions</li>
+                <li> Learn one of the most popular, widly used languages in the world</li>
+            </ul>
+        </div>
+        <div class="container-ls shadow ">
+            <h3>Content : </h3>
+            <ol>
+                <li>C - programming</li>
+                <ul>
+                    <li> installing software</li>
+                    <li> basic concept</li>
+                    <li> variables and dat types</li>
+                    <li> Operators</li>
+                    <li> control flow</li>
+                    <li> Arrays</li>
+                    <li> Functions</li>
+                    <li> character strings </li>
+                    <li> debugging</li>
+                    <li> Pointer Basics</li>
+                    <li> Dynamic memory allocation</li>
+                    <li> structures</li>
+                    <li> File handling</li>
+                </ul>
+                <li> C++ - Programming</li>
+                <ul>
+                    <li> OOP - classes and objects</li>
+                    <li> Operator Overloading </li>
+                    <li> Inheritance</li>
+                    <li> polymorphism</li>
+                    <li> Exception handling</li>
+                </ul>
+            </ol>
+        </div>
+        <div class="container-desc shadow">
+            <h3>Description</h3>
+            <p>Have you never programmed a computer before, and think or have been told that C is a good programming language to get started with.  It is!</p>
+
+            <p>Maybe you have some experience with other programming languages, but want to learn C.  It's a great language to add to your resume!</p>
+            <div class=""><a href="{% url 'signup' %}" class="btn btn-warning">Enroll Now &nbsp;&nbsp; <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        </div>
+    </div>
+</section>
+{% endblock %}

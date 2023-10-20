@@ -1,0 +1,35 @@
+{% extends 'home.html' %} 
+{% load static %}
+
+{% block 'title' %}<title>Feedback</title>{% endblock %}
+
+{% block 'Main_Content' %}
+<secction class="">
+        <div class="feedback-banner">
+                <h2>Feedback</h2>
+        </div>
+        <div class="container-fluid">
+                <div class="container">
+                        <div><h2 class="text-center mb-5 shadow-sm p-3">How can we improve our Services.</h2></div>
+                        <form action="" method="post">
+                                {% csrf_token %}
+                                <div class="row">
+                                <div class="col-md-7 shadow rounded p-5">
+                                        <div class="mb-3">
+                                        <label for="form-label">Username</label>
+                                        <input type="text" class="form-control" name="{{ feedback_form.username.html_name }}" placeholder="Enter username" value="{{request.user.username}}" required readonly>
+                                        </div>
+                                        <div class="mb-3">
+                                        <label for="form-label">Message</label>
+                                        <textarea class="form-control" placeholder="Your feedback" rows="4" name="{{ feedback_form.feedback.html_name }}" value=""></textarea>
+                                        </div>
+                                        <button class="btn btn-primary" type="submit">Submit</button>
+                                </div>
+                                </div>
+                        </form>
+                </div>
+        </div>
+        <br><br>
+</secction>
+
+{% endblock %}

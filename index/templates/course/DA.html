@@ -1,0 +1,67 @@
+{% extends 'home.html' %} 
+{% load static %}
+{% block 'title' %}<title>Data Analyst</title>{% endblock %}
+
+{% block 'Main_Content' %}
+<section>
+    <div class="fl-top">
+        <div class="head">
+            <h2>Data Analyst Program : Python, Excel, SQL, PowerBI</h2>
+            <p>Complete Data Analyst Training: Python, NumPy, Pandas, Data Collection, Preprocessing, Data Types, Data Visualization</p>
+        </div>
+        <img class="shadow" src="{% static 'images/DA.png' %}">
+    </div>
+    <div class="container-fluid">
+        <div class="container-ls shadow">
+            <h3 class="">What you'll learn</h3>
+            <ul>
+                <li>The course provides the complete preparation you need to become a data analyst</li>
+                <li>Acquire a big picture understanding of the data analyst role</li>
+                <li>We will teach you NumPy and pandas, basics and advanced</li>
+                <li>Understand different data types and their memory usage</li>
+            </ul>
+        </div>
+        <div class="container-ls shadow ">
+            <h3>Content : </h3>
+            <ol>
+                <li>Python Introduction</li>
+                <ul>
+                    <li> Basics</li>
+                    <li> variable and datatypes</li>
+                    <li> flow control</li>
+                    <li> list, dict, tuple, set</li>
+                    <li> pandas</li>
+                    <li> numpy</li>
+                    <li> matplotlib</li>
+                </ul>
+                <li> excel Introduction</li>
+                <ul>
+                    <li> basics </li>
+                    <li> commands concepts</li>
+                    <li> cells introduction</li>
+                    <li> Advanced flow control</li>
+                </ul>
+                <li> Analytics</li>
+                <ul>
+                    <li> data cleaning</li>
+                    <li> Data Visualization </li>
+                    <li> Pre-Processing</li>
+                    <li> install jupyter</li>
+                </ul>
+                <li> PowerBI</li>
+                <ul>
+                    <li> Dashboard</li>
+                    <li> Setup GUI </li>
+                    <li> Pre-Processing</li>
+                    <li> Case study</li>
+                </ul>
+            </ol>
+        </div>
+        <div class="container-desc shadow">
+            <h3>Description</h3>
+            Most data analyst, data science, and coding courses miss a critical practical step. They don’t teach you how to work with raw data, how to clean, and preprocess it. This creates a sizeable gap between the skills you need on the job and the abilities you have acquired in training. Truth be told, real-world data is messy, so you need to know how to overcome this obstacle to become an independent data professional.</p>
+            <div class=""><a href="{% url 'signup' %}" class="btn btn-warning">Enroll Now &nbsp;&nbsp; <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        </div>
+    </div>
+</section>
+{% endblock %}

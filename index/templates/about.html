@@ -1,0 +1,33 @@
+{% extends 'home.html' %} 
+{% load static %}
+{% block 'title' %}<title>About Us</title>{% endblock %}
+
+{% block 'Main_Content' %}
+    <section>
+        <div class="about-banner">
+            <div class="abt-cap">
+                about us
+            </div>
+        </div>
+        <div class="flyers">
+            <div class="img-flyer"></div>
+            <div class="con-flyer">
+                <h2>Welcome to 3RI Technologies</h2>
+                <p>We are a professional software training institute in India and here we are committed to providing the highest quality software development training and placement support.</p>
+                <p>We are known as one of the best IT Training institutes in india with a clear vision of imparting Quality Education & Training among students.</p>
+                <br>
+                <img src="{% static 'images/abt-stat.jpg' %}">
+            </div>
+        </div>
+        <div class="client-container">
+            <h1>Our Clients</h1>
+            <img src="{% static 'images/cl-logo1.png' %}">
+            <img src="{% static 'images/cl-logo2.jpg' %}">
+            <img src="{% static 'images/cl-logo3.png' %}">
+            <img src="{% static 'images/cl-logo4.png' %}">
+            <img src="{% static 'images/cl-logo5.png' %}">
+            <img src="{% static 'images/cl-logo6.png' %}">
+            <img src="{% static 'images/cl-logo7.png' %}">
+          </div>
+    </section>
+{% endblock %}

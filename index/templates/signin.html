@@ -1,0 +1,39 @@
+{% extends 'home.html' %} 
+{% load static %}
+{% block 'title' %}<title>Sign In</title>{% endblock %}
+
+{% block 'Main_Content' %}
+<section class="">
+        <div class="login-bg">
+                <div class="greet">
+                        <h2>Welcome Back</h2>
+                        <p>Login to see your academic Progession.</p>
+                </div>
+                <div class="form_container">
+                        <form action="" method="POST">
+                                {% csrf_token %}
+                                <h2>Login</h2>
+                                <div class="input-box">
+                                        <span class="icon"><i class="fa-solid fa-user"></i></span>
+                                        <input type="text" name="{{ signin_form.username.html_name }}" maxlength="50" required>
+                                        <label>Username</label>
+                                </div>
+                                <div class="input-box">
+                                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                                        <input type="password" name="{{ signin_form.password.html_name }}" maxlength="30" required>
+                                        <label>Password</label>
+                                </div>
+                                <div class="remember-forget">
+                                        <label><input type="checkbox">Remember me</label>
+                                        <a href="#">forgot password ?</a>
+                                </div>
+                                <button class="reg-log-btn" type="submit">Sign in</button>
+                                <div class="reg-log-link">
+                                        <p>Don't have an account ? <a href="{% url 'signup' %}"> Sign Up</a></p>
+                                </div>
+                        </form>
+                </div>
+
+        </div>
+</section>
+{% endblock %}

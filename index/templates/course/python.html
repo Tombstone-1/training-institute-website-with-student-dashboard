@@ -1,0 +1,58 @@
+{% extends 'home.html' %} 
+{% load static %}
+{% block 'title' %}<title>python</title>{% endblock %}
+
+{% block 'Main_Content' %}
+<section>
+    <div class="fl-top">
+        <div class="head">
+            <h2>Python Beginner course : Core and Advanced</h2>
+            <p>Python Complete Course For Python Beginners.Learn Python From Beginner To Advanced Level</p>
+        </div>
+        <img class="shadow" src="{% static 'images/python.jpg' %}">
+    </div>
+    <div class="container-fluid">
+        <div class="container-ls shadow">
+            <h3 class="">What you'll learn</h3>
+            <ul>
+                <li>Program fluently in Python</li>
+                <li>Use Pycharm to write their Python programs</li>
+                <li>Understand computer science concepts such as flow control and functions</li>
+            </ul>
+        </div>
+        <div class="container-ls shadow ">
+            <h3>Content : </h3>
+            <ol>
+                <li>Core Introduction</li>
+                <ul>
+                    <li> Python Basics</li>
+                    <li> strings</li>
+                    <li> functions</li>
+                    <li> flow control</li>
+                    <li> introduction to loops</li>
+                    <li> strings part 2</li>
+                    <li> lists</li>
+                    <li> tuple</li>
+                    <li> set</li>
+                    <li> dictionaries</li>
+                </ul>
+                <li> Advanced Introduction</li>
+                <ul>
+                    <li> local Enviroment setup </li>
+                    <li> OOPs</li>
+                    <li> working with csv</li>
+                    <li> Tkinter</li>
+                    <li> Exception handling</li>
+                    <li> python - project</li>
+                </ul>
+            </ol>
+        </div>
+        <div class="container-desc shadow">
+            <h3>Description</h3>
+            <p>Learn Python from scratch, get hired, and have fun along the way with the most modern, up-to-date Python course on Udemy (we use the latest version of Python). This course is focused on efficiency: never spend time on confusing, out of date, incomplete Python tutorials anymore.</p>
+            <p>This comprehensive and project based course will introduce you to all of the modern skills of a Python developer (Python 3) and along the way, we will build over 12 real world projects to add to your portfolio (You will get access to all the the code from the 12+ projects we build, so that you can put them on your portfolio right away)!</p>
+            <div class=""><a href="{% url 'signup' %}" class="btn btn-warning">Enroll Now &nbsp;&nbsp; <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        </div>
+    </div>
+</section>
+{% endblock %}

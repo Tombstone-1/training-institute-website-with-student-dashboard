@@ -1,0 +1,71 @@
+{% extends 'home.html' %} 
+{% load static %}
+{% block 'title' %}<title>Data Scientist</title>{% endblock %}
+
+{% block 'Main_Content' %}
+<section>
+    <div class="fl-top">
+        <div class="head">
+            <h2>The Data Science Course: Complete Data Science Program</h2>
+            <p>Complete Data Science Training: Mathematics, Statistics, Python, Advanced Statistics in Python, Machine & Deep Learning</p>
+        </div>
+        <img class="shadow" src="{% static 'images/DS.png' %}">
+    </div>
+    <div class="container-fluid">
+        <div class="container-ls shadow">
+            <h3 class="">What you'll learn</h3>
+            <ul>
+                <li>The course provides the entire toolbox you need to become a data scientist</li>
+                <li>Impress interviewers by showing an understanding of the data science field</li>
+                <li>Fill up your resume with in demand data science skills: Statistical analysis, Python programming with NumPy, pandas, matplotlib, and Seaborn, Advanced</li>
+            </ul>
+        </div>
+        <div class="container-ls shadow ">
+            <h3>Content : </h3>
+            <ol>
+                <li>Python Introduction</li>
+                <ul>
+                    <li> Basics</li>
+                    <li> variables and datatypes</li>
+                    <li> loops</li>
+                    <li> list, tuple, dict, set</li>
+                </ul>
+                <li> Probability</li>
+                <ul>
+                    <li> Combinatorics </li>
+                    <li> Bayesian Inference</li>
+                    <li> Distributions</li>
+                    <li> Probability</li>
+                </ul>
+                <li>Statistics</li>
+                <ul>
+                    <li> Inferential Statistics fundamentals</li>
+                    <li> confidence intervals </li>
+                    <li> Hypothesis testing</li>
+                </ul>
+                <li> Advanced Statistical methods</li>
+                <ul>
+                    <li>  linear Regression with StatModels</li>
+                    <li> linear Regression with sklearn</li>
+                    <li> logistic Regression</li>
+                    <li> Cluster Analysis</li>
+                </ul>
+                <li> Mathematics</li>
+                <li> Deep Learning</li>
+                <ul>
+                    <li>  Neural Networks</li>
+                    <li> TensorFlow 2.0 </li>
+                    <li> Overfitting</li>
+                    <li> Initialization</li>
+                </ul>
+            </ol>
+        </div>
+        <div class="container-desc shadow">
+            <h3>Description</h3>
+            <p>Data scientist is one of the best suited professions to thrive this century. It is digital, programming-oriented, and analytical. Therefore, it comes as no surprise that the demand for data scientists has been surging in the job marketplace.     </p>
+            <p>Data science is all about predictive modelling and you can become an expert in these methods through this ‘advance statistics’ section.  </p>
+            <div class=""><a href="{% url 'signup' %}" class="btn btn-warning">Enroll Now &nbsp;&nbsp; <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        </div>
+    </div>
+</section>
+{% endblock %}

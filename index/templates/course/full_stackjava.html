@@ -1,0 +1,81 @@
+{% extends 'home.html' %} 
+{% load static %}
+{% block 'title' %}<title>full stack java</title>{% endblock %}
+
+{% block 'Main_Content' %}
+<section>
+    <div class="fl-top">
+        <div class="head">
+            <h2>Full Stack Java developer - Java, MySQL, Angular Js</h2>
+            <p>Full Stack Java developer - Core Java + JSP Servlets + Hibernate +Spring</p>
+        </div>
+        <img class="shadow" src="{% static 'images/fs-java.jpg' %}">
+    </div>
+    <div class="container-fluid">
+        <div class="container-ls shadow">
+            <h3 class="">What you'll learn</h3>
+            <ul>
+                <li>Build a fully functioning web application through a simplistic step from a professional trainer</li>
+                <li>Learn Java server pages, servlets, and JSTL from the basics to advance</li>
+                <li>evelop Dynamic Web Applications</li>
+                <li>Learn MVC in JSP</li>
+                <li>Understand building web forms with JSP</li>
+                <li> Spring Framework</li>
+                <li>Spring Boot</li>
+            </ul>
+        </div>
+        <div class="container-ls shadow ">
+            <h3>Content : </h3>
+            <ol>
+                <li>Java Introduction</li>
+                <ul>
+                    <li> Basics</li>
+                    <li> datatypes and Variables</li>
+                    <li> flow control</li>
+                    <li> Methods</li>
+                    <li> Oops</li>
+                    <li> Core concepts</li>
+                    <li> Array</li>
+                </ul>
+                <li> Advanced</li>
+                <ul>
+                    <li> Collections </li>
+                    <li> Multi-threading concurrency</li>
+                    <li> Lamdba expression</li>
+                    <li> file handling</li>
+                </ul>
+                <li> JSP & serverlets</li>
+                <ul>
+                    <li> Introduction</li>
+                    <li> forms </li>
+                    <li> java beans</li>
+                    <li> session management</li>
+                    <li> JSTL core and function tags</li>
+                    <li> interacting with database </li>
+                </ul>
+                <li> Hibernate</li>
+                <ul>
+                    <li> introduction</li>
+                    <li> framework</li>
+                    <li> query language</li>
+                    <li> building the application</li>
+                </ul>
+                <li> spring 5</li>
+                <ul>
+                    <li> introduction</li>
+                    <li> inversion control, Dependency injection</li>
+                    <li> autowire</li>
+                    <li> spring bean</li>
+                    <li> database connectivity</li>
+                </ul>
+            </ol>
+        </div>
+        <div class="container-desc shadow">
+            <h3>Description</h3>
+            <p>Welcome to our Full Stack Java Developer course designed for learning enthusiasts who want to create a quick and efficient web application.</p>
+            <p>If you have some Java knowledge and little or no knowledge about Java programming, this course is perfect for you. In this course, you will be able to combine all the ways to connect to the database and learn how to make it informative and attractive.</p>
+            <div class=""><a href="{% url 'signup' %}" class="btn btn-warning">Enroll Now &nbsp;&nbsp; <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,75 @@
+{% extends 'home.html' %} 
+{% load static %}
+{% block 'title' %}<title>full stack python</title>{% endblock %}
+
+{% block 'Main_Content' %}
+<section>
+    <div class="fl-top">
+        <div class="head">
+            <h2>Python and Django Full Stack Web Developer Program</h2>
+            <p>Learn to build websites with HTML , CSS , Bootstrap , Javascript , jQuery , Python 3 , and Django!</p>
+        </div>
+        <img class="shadow" src="{% static 'images/fs-python.jpg' %}">
+    </div>
+    <div class="container-fluid">
+        <div class="container-ls shadow">
+            <h3 class="">What you'll learn</h3>
+            <ul>
+                <li>Create a fully functional web site using the full stack django</li>
+                <li>use css to create beautifully styled sites</li>
+                <li>learn how to use html to create website content</li>
+                <li>learn how to take advantage of Bootstrap to work with DOM</li>
+                <li>create fantastic landing pages</li>
+                <li> use django as a back end for the websites</li>
+                <li>implement a full Model-View-Templates structure for your site.</li>
+            </ul>
+        </div>
+        <div class="container-ls shadow ">
+            <h3>Content : </h3>
+            <ol>
+                <li>Front-End Introduction</li>
+                <ul>
+                    <li> Basics</li>
+                    <li> Html</li>
+                    <li> Css</li>
+                    <li> Project - Static webpage</li>
+                    <li> Bootstrap Introduction</li>
+                    <li> Javascript</li>
+                    <li> jQuery</li>
+                </ul>
+                <li> Back-End Introduction</li>
+                <ul>
+                    <li> Python </li>
+                    <li> framework - introduction</li>
+                    <li> Django Models</li>
+                    <li> Django Admin</li>
+                    <li> Django Deployment</li>
+                    <li> framework - project</li>
+                </ul>
+                <li> Database connectivity</li>
+                <ul>
+                    <li> DB - MySQL</li>
+                    <li> MySQL - DDL </li>
+                    <li> MySQL - DQL/DML</li>
+                    <li> MySQL - DCL/TCL</li>
+                    <li> Connecting With Django</li>
+                    <li> framework assign with MySQL</li>
+                </ul>
+                <li> Linux & Git</li>
+                <ul>
+                    <li> Linux Introduction</li>
+                    <li> linux - Commands</li>
+                    <li> git and github intro</li>
+                    <li> Project Hosting and Deployment</li>
+                </ul>
+            </ol>
+        </div>
+        <div class="container-desc shadow">
+            <h3>Description</h3>
+            <p>Welcome to the Python and Django Full Stack Web Developer program! In this course we cover everything you need to know to build a website using Python, Django, and many more web technologies!</p>
+            <p>This course is designed so that anyone can learn how to become a web developer. We teach you how to program by using HD Video Lectures, Walkthrough Code Projects, Exercises, Concept Presentation Slides, Downloadable Code Notes, Reading Assignments, and much more! </p>
+            <div class=""><a href="{% url 'signup' %}" class="btn btn-warning">Enroll Now &nbsp;&nbsp; <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        </div>
+    </div>
+</section>
+{% endblock %}
