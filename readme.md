@@ -15,5 +15,3 @@ Added :-
 1.separate css files for dashboard and others.
 
 2.Static Dashboard for more feature implimentation in future.
-
-trying to deploy with railway is next.
